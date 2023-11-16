@@ -10,30 +10,31 @@ class OrangeTree
 
   def one_year_passes!
     @age += 1
-    @height += 1 if @age <= 10
     @fruits = 0
-    # TODO: check if the tree has survived
-    # TODO: if so, make the tree grow
-    # TODO: and produce fruits
+    @height += 1 if @age <= 10
+
+    if !dead?
+      if @age > 5 && @age < 10
+        @fruits += 100
+      elsif @age >= 10 && @age < 15
+        @fruits += 200
+      end
+    end
   end
 
   def pick_a_fruit!
-    return @fruits-=1 
-    return @fruits = 0 if @fruits == 0
+    if @fruits > 0
+      @fruits -= 1 
+    end
   end
   
   def dead?
-    dead = false
-    dead = true if @age >= 100
-    dead = true if @age > 50 && @age == rand(@age..100)
-    return dead
+    if @age >= 100
+      true
+    elsif @age > 50 && @age == rand(@age..100)
+      true
+    else
+      false
+    end
   end
-  
-  def fruits
-    @fruits += 100 if @age < 10 && @age > 5
-    @fruits += 200 if @age >= 10 && @age < 15
-    return @fruits
-  end
-
-
 end

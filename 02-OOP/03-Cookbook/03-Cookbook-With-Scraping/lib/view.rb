@@ -2,8 +2,14 @@
 class View
     def display_list(recipes)
       recipes.each_with_index do |recipe, index|
-        puts "#{index + 1}. #{recipe.name}"
-        #
+        puts "#{index + 1}. #{recipe.name} (#{recipe.rating} / 5)"
+      end
+    end
+
+    def display_list_to_mark_done(recipes)
+      recipes.each_with_index do |recipe, index|
+        done = recipe.done == true ? "[X]" : "[ ]"
+        puts "#{index + 1}. #{done} #{recipe.name} (#{recipe.rating} / 5)"
       end
     end
 

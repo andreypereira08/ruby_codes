@@ -2,7 +2,7 @@
 class View
     def display_list(recipes)
       recipes.each_with_index do |recipe, index|
-        puts "#{index + 1}. #{recipe.name} (#{recipe.rating} / 5)"
+        puts "#{index + 1}. #{recipe.name} (#{recipe.rating} / 5) | Prep_Time: #{recipe.prep_time}"
       end
     end
 

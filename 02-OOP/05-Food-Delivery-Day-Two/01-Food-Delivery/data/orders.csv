@@ -1,0 +1,10 @@
+id,delivered,meal_id,customer_id,employee_id
+1,true,1,1,2
+2,true,1,2,2
+3,true,2,3,2
+4,true,5,2,3
+5,true,5,1,2
+6,false,3,3,3
+7,false,2,2,2
+8,false,3,3,3
+9,false,4,3,3

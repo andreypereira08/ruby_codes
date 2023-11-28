@@ -18,14 +18,12 @@ class Router
     @user = @employees_controller.login
     while @running
       if @user.manager?
-        #if your role is 'manager'
         puts "Welcome to the manager area"
         display_tasks_manager
         action = gets.chomp.to_i
         print `clear`
         route_action_manager(action)
-      else #or elsif @user.rider?
-        #if your role is rider
+      else
         puts "Welcome to the rider area"
         display_tasks_rider
         action = gets.chomp.to_i

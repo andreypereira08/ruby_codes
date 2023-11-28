@@ -46,8 +46,6 @@ class Router
     when 5 then @orders_controller.add
     when 6 then @orders_controller.list_orders
     when 7 then @orders_controller.list_undelivered_orders
-    #[ ] As a manager, I can add a new order
-    #[ ] As a manager, I can list all the undelivered orders
     when 9 then stop
     else
       puts "Please press 1, 2, 3, 4 or 5"

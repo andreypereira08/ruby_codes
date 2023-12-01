@@ -18,14 +18,12 @@ class Router
     @user = @employees_controller.login
     while @running
       if @user.manager?
-        #if your role is 'manager'
         puts "Welcome to the manager area"
         display_tasks_manager
         action = gets.chomp.to_i
         print `clear`
         route_action_manager(action)
-      else #or elsif @user.rider?
-        #if your role is rider
+      else
         puts "Welcome to the rider area"
         display_tasks_rider
         action = gets.chomp.to_i
@@ -46,8 +44,6 @@ class Router
     when 5 then @orders_controller.add
     when 6 then @orders_controller.list_orders
     when 7 then @orders_controller.list_undelivered_orders
-    #[ ] As a manager, I can add a new order
-    #[ ] As a manager, I can list all the undelivered orders
     when 9 then stop
     else
       puts "Please press 1, 2, 3, 4 or 5"

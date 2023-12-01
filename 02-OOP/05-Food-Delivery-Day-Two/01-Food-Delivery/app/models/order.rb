@@ -14,6 +14,6 @@ class Order
     end
 
     def delivered?
-        return @delivered #? true : false
+        return @delivered
     end
 end

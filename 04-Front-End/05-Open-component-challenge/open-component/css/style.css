@@ -1,0 +1,23 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700");
+@import url("https://use.fontawesome.com/releases/v6.1.2/css/all.css");
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&family=Roboto:wght@100;300;400;700;900&display=swap');
+
+/* Components */
+@import url("components/cards.css"); 
+
+
+body {
+  margin: 0;
+  margin-bottom: 100px;
+  font-family: 'Lexend', sans-serif;
+  font-size: small;
+}
+.text-center {
+  text-align: center;
+}
+.main-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+

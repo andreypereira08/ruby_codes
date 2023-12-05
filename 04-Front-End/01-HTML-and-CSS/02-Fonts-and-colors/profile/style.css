@@ -1,0 +1,45 @@
+/*body {
+    background-color: #FDFFF7;
+    color: #2E2D4D;
+    font-family: 'Roboto', sans-serif;
+}*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500;700");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; /* if you want the light version */
+    background-color: #FDFFF7;
+    color: #2F323A;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: #77567A;
+}
+
+a:hover {
+    color: #77567a9c;
+    font-size: larger;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #77567A;
+}
+
+img {
+    width: 150px;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    padding: 10px 20px;
+    color: #77567A;
+    background-color: #CAD593;
+    border: none;
+    border-radius: 10px;
+}

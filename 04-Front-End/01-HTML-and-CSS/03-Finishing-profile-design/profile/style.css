@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500;700");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; /* if you want the light version */
+    background-color: #EFF2F1;
+    color: #2B4162;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: #2B4162;
+
+    padding: 50px;
+}
+
+a:hover {
+    color: #6B9AC4; 
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #2B4162;
+}
+
+img {
+    width: 150px;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    padding: 15px 40px;
+    color: white;
+    background-color: #2A2A72;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    color: white;
+    background-color: #232528;
+}
+
+/*-------------------------- hint of exercise --------------------------*/
+
+.container {
+    width: 700px;   /* This sets the width */
+    margin: 0 auto; /* This automatically sets left/right margins */
+    margin-bottom: 5%;
+}
+
+#home-page-first-image {
+    border-radius: 50%;
+  }
+  
+  .home-card {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border: 1px solid lightgrey;
+    margin-top: 30px;
+    box-shadow: 1px 2px 30px rgba(180, 180, 180, 0.63);
+  }
+
+  .list-inline {
+    list-style: none;
+  }
+
+  .list-inline > li {
+    display: inline-block;
+    font-size: 50px;
+  }

@@ -1,6 +1,7 @@
 /* Your board style here */
 .racer-table{
   width: 100%;
+  position: relative;
 }
 .racer-table td {
     height: 40px;
@@ -17,7 +18,10 @@
   #player2-race td.active {
     background-image: url("images/player_2.png");
   }
+
   #finish {
-    width: 40px;
+    width: 5%;
     height: 80px;
+    position: absolute;
+    right: 0px;
   }

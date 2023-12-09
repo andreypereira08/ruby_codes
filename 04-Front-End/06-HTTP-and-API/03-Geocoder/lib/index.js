@@ -20,9 +20,8 @@ const showMap = (userInput) => {
       const lang = coordinates[0];
       const lat = coordinates[1];
       document.querySelector("p").innerText = `${lang}, ${lat}`;
-      // const mapUrl = `https://api.mapbox.com/geocoding/v5/mapbox.places/${lang},${lat}.json?access_token=${apiKey}`;
 
-      mapboxgl.accessToken = "pk.eyJ1IjoibGVvdnNmIiwiYSI6ImNqc2VvNW9qcjE4M2czeWwxeHhjMnI5NWcifQ.iRvACR64aV88KLvOszpj_Q";
+      mapboxgl.accessToken = apiKey;
       const map = new mapboxgl.Map({
         container: "map",
         style: "mapbox://styles/mapbox/streets-v9",

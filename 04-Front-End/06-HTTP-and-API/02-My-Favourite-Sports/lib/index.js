@@ -1,9 +1,13 @@
 // TODO: write your code here!
-const sports = document.querySelectorAll(".clickable");
-const activeSports = (sport) => {
-  sport.addEventListener("click", (event) => {
-    sport.classList.toggle("active");
-  });
-};
+const toggleActiveClass = (card) => {
+    card.classList.toggle("active");
+}
 
-sports.forEach(activeSports);
+const bindSportToClick = (element) => {
+  element.addEventListener('click', (event) => {
+    toggleActiveClass(element);
+  });
+}
+
+const sports = document.querySelectorAll('.clickable');
+sports.forEach(bindSportToClick);

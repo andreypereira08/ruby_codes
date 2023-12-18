@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="d-flex justify-content-between p-3">
+        <h2><%= @task.title %></h2> 
+        <div class="p-2 border">
+            <%= link_to edit_path(@task.id), {:class => "text-decoration-none"} do %>
+            <i class="fa-solid fa-pen"></i> Edit this task
+            <% end %>
+        </div>
+    </div>
+    <div class="p-4 border border-primary-subtle bg-secondary-subtle rounded-3"><%= @task.details %></div>
+    <div class="py-4">
+        <%= form_with model: @task do |f| %>
+            <%= f.check_box :completed, {}, true, false %>
+            <%= f.label "completed"%>
+            <%# add logic to label check box %>
+        <% end %>
+    </div>
+
+  <%= link_to tasks_path do %>
+    <i class="fa-solid fa-rotate-left"></i>
+    Back to list
+  <% end %>
+</div>
+

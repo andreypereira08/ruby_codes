@@ -1,0 +1,21 @@
+<div class="container">
+    <h1>All Tasks</h1>
+    <ul>
+        <% @tasks.each do |task| %>
+        <div class="d-flex">
+                <%= form_with model: task do |f| %>
+                    <%= f.check_box :completed, {}, true, false %>
+                <% end %>
+                <%= link_to task.title, task_path(task.id), :class => "text-decoration-none px-2" %>
+                <%= link_to delete_path(task.id), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, :class => "px-2" do %>
+                    <i class="fa-solid fa-trash"></i>
+                <% end%> 
+        </div>
+        <% end %>
+    </ul>
+    <hr>
+
+    <%= link_to "#{tasks_path}/new", :class => "text-decoration-none" do %>
+        <i class="fa-solid fa-plus"></i> Add a new task
+    <% end %>
+</div>

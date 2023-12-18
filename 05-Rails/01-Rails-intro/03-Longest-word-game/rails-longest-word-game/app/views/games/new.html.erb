@@ -1,0 +1,21 @@
+<div class="container">
+    <h1>New Game</h1>
+    <div class="d-flex flex-wrap">
+        <% @letters.each do |letter|%>
+            <div class="px-4 m-2 bg-info">
+                <p class="text-justify text-white h3">
+                    <%= letter %>
+                </p>
+            </div>
+        <% end %>
+    </div>
+
+    <p class="mt-4">What is the longest word you can find?</p>
+    <form action="score" method="post" data-turbo="false" class="d-flex">
+        <input type="text" name="attempt" value="<%= params[:attempt] %>" class="form-control" placeholder="Enter your attempt">
+        <input name="letters" type="hidden" value="<%= @letters.join %>">
+        <input type="submit" class="btn btn-primary" value="Submit!">
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    </form>
+
+</div>

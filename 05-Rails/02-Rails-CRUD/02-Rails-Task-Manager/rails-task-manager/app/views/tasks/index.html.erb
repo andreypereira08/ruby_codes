@@ -9,7 +9,7 @@
                 <%= link_to task.title, task_path(task.id), :class => "text-decoration-none px-2" %>
                 <%= link_to delete_path(task.id), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, :class => "px-2" do %>
                     <i class="fa-solid fa-trash"></i>
-                <% end%> 
+                <% end%>
         </div>
         <% end %>
     </ul>

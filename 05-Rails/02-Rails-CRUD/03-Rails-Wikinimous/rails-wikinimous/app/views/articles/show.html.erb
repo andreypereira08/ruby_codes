@@ -4,7 +4,7 @@
 
 
 <div class="d-flex justify-content-start gap-1">
-      <%= button_to " D E L E T E", @article, method: :delete, :class => "p-2 btn fa-solid fa-trash btn-danger" %>
+      <%= button_to " D E L E T E", @article, method: :delete, data: {turbo_confirm: "Are you sure?"}, :class => "p-2 btn fa-solid fa-trash btn-danger" %>
 
       <%= link_to edit_article_path(@article), {:class => "text-decoration-none btn btn-warning"} do %>
         <i class="fa-solid fa-pen"></i> Edit this article

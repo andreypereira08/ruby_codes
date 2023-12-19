@@ -5,5 +5,8 @@
 <br>
 
 <div>
-  <%= link_to "Back to articles", articles_path %>
+<%= link_to articles_path, {:class => "text-decoration-none btn btn-primary"} do %>
+        <i class="fa-solid fa-rotate-left"></i>
+        Back to articles
+      <% end %>
 </div>

@@ -3,8 +3,13 @@
 <%= render "form", article: @article %>
 
 <br>
+<div class="d-flex justify-content-start gap-1">
+      <%= link_to @article, {:class => "text-decoration-none btn btn-secondary"} do %>
+        <i class="fa-solid fa-eye"></i> Show this article
+      <% end %>
 
-<div>
-  <%= link_to "Show this article", @article %> |
-  <%= link_to "Back to articles", articles_path %>
+      <%= link_to articles_path, {:class => "text-decoration-none btn btn-primary"} do %>
+        <i class="fa-solid fa-rotate-left"></i>
+        Back to articles
+      <% end %>
 </div>

@@ -1,14 +1,17 @@
 <p style="color: green"><%= notice %></p>
-
-<h1>Restaurants</h1>
+<div class="d-flex justify-content-between">
+  <h1>Restaurants</h1>
+  <%= link_to "New restaurant", new_restaurant_path, class: "btn btn-success p-2 m-3" %>
+</div>
 
 <div id="restaurants">
-  <% @restaurants.each do |restaurant| %>
-    <%= render restaurant %>
-    <p>
-      <%= link_to "Show this restaurant", restaurant %>
-    </p>
+    <% @restaurants.each do |restaurant| %>
+  <div class="border p-3 my-2">
+      <%= render restaurant %>
+      <p>
+        <%= link_to "See details", restaurant_path(restaurant), class: "btn btn-primary"%>
+      </p>
+  </div>
   <% end %>
 </div>
 
-<%= link_to "New restaurant", new_restaurant_path %>

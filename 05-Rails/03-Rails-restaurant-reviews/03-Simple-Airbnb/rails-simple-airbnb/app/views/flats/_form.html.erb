@@ -1,0 +1,20 @@
+<%= form_with model: @flat, class: "d-flex flex-column gap-2" do |f| %>
+
+      <%= f.label :name %>
+      <%= f.text_field :name, class: "form-control" %>
+
+      <%= f.label :address %>
+      <%= f.text_field :address, class: "form-control" %>
+      
+      <%= f.label :description %>
+      <%= f.text_field :description, class: "form-control" %>
+
+      <%= f.label :price_per_night %>
+      <%= f.text_field :price_per_night, class: "form-control" %>
+
+      <%= f.label :number_of_guests %>
+      <%= f.text_field :number_of_guests, class: "form-control" %>
+
+      <%= f.submit "Submit", class: "btn btn-success" %>
+
+<% end %>

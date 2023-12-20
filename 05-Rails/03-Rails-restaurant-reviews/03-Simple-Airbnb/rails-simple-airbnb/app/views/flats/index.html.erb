@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>All our Flats (<%= @flats.size %>)</h1>
+    <div class="d-flex flex-wrap">
+      <% @flats.each do |flat| %>
+    
+        <div class="col-md-4 m-3 border shadow">
+            <%= render flat %>
+            <div class="d-flex p-2 border-top">
+                <%= link_to "See details", flat_path(flat), class: "card-link"%>
+                <%= link_to "Edit", edit_flat_path(flat), class: "card-link"%>
+                <%= link_to "Remove", flat_path(flat), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "card-link"%>
+            </div>
+        </div>
+
+      <% end %>
+    </div>
+</div>

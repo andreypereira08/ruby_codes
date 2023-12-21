@@ -1,0 +1,3 @@
+[submodule "05-Rails/04-Rails-mister-cocktail/02-Watch-List/rails-watch-list/spec"]
+	path = 05-Rails/04-Rails-mister-cocktail/02-Watch-List/rails-watch-list/spec
+	url = https://github.com/lewagon/fullstack-challenges-04-Rails-watch-list-specs.git

@@ -1,0 +1,22 @@
+<% @bookmarks.each do |bookmark| %>
+  <div class="card-movie m-3 d-flex flex-column shadow">
+    <%= image_tag(Movie.find(bookmark.movie_id).poster_url, height: '320', class: "object-fit-cover") %>
+    <div class="p-4">
+      <p>
+        <strong>
+          <%= Movie.find(bookmark.movie_id).title %>
+           •
+          </strong>
+        <%= Movie.find(bookmark.movie_id).rating %> <i class="fa-solid fa-star"></i>
+      </p>
+
+      <p> <%= Movie.find(bookmark.movie_id).overview %> </p>
+
+      <div class="pt-3 d-flex justify-content-between">
+        <p> <i class="fa-solid fa-quote-left"></i>
+        <strong><%= bookmark.comment %></strong></p>
+        <%= button_to 'Delete Bookmark', list_bookmark_url(@list, bookmark), method: :delete, data: { turbo_confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+      </div>
+    </div>
+  </div>
+<% end %>

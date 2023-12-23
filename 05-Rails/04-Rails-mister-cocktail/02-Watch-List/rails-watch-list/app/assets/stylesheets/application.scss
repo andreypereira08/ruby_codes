@@ -1,3 +1,5 @@
+$darkness_mask: grayscale(90%);
+
 // Graphical variables
 @import "config/fonts";
 @import "config/colors";
@@ -9,4 +11,5 @@
 
 // Your CSS partials
 @import "components/index";
+@import "components/cards";
 @import "pages/index";

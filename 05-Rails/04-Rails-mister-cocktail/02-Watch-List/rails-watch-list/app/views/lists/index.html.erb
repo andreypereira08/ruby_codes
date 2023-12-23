@@ -1,0 +1,20 @@
+<div class="logo d-flex justify-content-center w-100">
+  <div class="m-auto">
+    <h1 class="text-light">Save any kind of movies</h1>
+    <h3 class="text-center text-light">Classic</h3>
+  </div>
+</div>
+
+<div class="container">
+  <div class="d-flex flex-column my-5">
+    <div class="d-flex justify-content-between">
+      <h2>My List</h2>
+      <%= link_to "New list", new_list_path, class: "btn btn-success text-light" %>
+    </div>
+
+    <div class="cards-list my-3">
+      <%= render "card-lists" %>
+    </div>
+
+  </div>
+</div>

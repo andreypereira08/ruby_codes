@@ -1,0 +1,30 @@
+.cards-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-list {
+  filter: $darkness_mask;
+  background-image: asset-url("film_img.jpg");
+
+  img {
+    width: 100%;
+  }
+  a {
+    position: absolute;
+    font-weight: 800;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-shadow:
+        3px 3px 0 #000,
+      -1px -1px 0 #000,
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000;
+  }
+}
+
+.cards-movie {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

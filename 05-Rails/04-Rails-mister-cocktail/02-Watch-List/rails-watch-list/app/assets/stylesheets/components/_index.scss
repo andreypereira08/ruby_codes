@@ -3,3 +3,10 @@
 @import "avatar";
 @import "form_legend_clear";
 @import "navbar";
+
+.logo {
+  background-image: asset-url("film_img.jpg");
+  background-size: cover;
+  height: 300px;
+  filter: $darkness_mask;
+}

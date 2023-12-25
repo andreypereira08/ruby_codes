@@ -6,7 +6,9 @@
 
 .logo {
   background-image: asset-url("film_img.jpg");
-  background-size: cover;
-  height: 300px;
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
   filter: $darkness_mask;
 }

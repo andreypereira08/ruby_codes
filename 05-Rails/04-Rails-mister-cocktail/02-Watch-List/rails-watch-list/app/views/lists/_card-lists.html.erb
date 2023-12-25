@@ -1,11 +1,6 @@
 <% @lists.each do |list| %>
   <div class="card-list m-2 d-flex shadow justify-content-center align-items-center">
-
     <%= link_to list.name, list_path(list), class: "h2 text-decoration-none"%>
-    <% if list.banner != "" %>
-      <%= image_tag(list.banner, height: '320', class: "object-fit-cover") %>
-    <% end %>
-
+    <%= cl_image_tag list.photo.key, height: 320, crop: :fill %>
   </div>
-
 <% end %>

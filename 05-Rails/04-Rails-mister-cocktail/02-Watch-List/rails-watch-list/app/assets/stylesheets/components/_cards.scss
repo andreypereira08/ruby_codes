@@ -6,10 +6,9 @@
 .card-list {
   filter: $darkness_mask;
   background-image: asset-url("film_img.jpg");
+  height: 320px;
 
-  img {
-    width: 100%;
-  }
+
   a {
     position: absolute;
     font-weight: 800;

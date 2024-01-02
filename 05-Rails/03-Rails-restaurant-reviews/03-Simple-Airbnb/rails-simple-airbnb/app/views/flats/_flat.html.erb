@@ -14,7 +14,7 @@
     </div>
   </div>
 
-  <div class="border-top">
+  <div class="border-top p-3">
     <%= link_to "See details", flat_path(flat), class: "card-link"%>
     <%= link_to "Edit", edit_flat_path(flat), class: "card-link text-warning"%>
     <%= link_to "Remove", flat_path(flat), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "card-link text-danger"%>

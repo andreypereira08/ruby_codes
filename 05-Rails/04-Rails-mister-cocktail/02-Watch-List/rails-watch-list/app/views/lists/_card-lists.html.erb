@@ -1,5 +1,5 @@
 <% @lists.each do |list| %>
   <div class="card-list m-2 d-flex shadow justify-content-center align-items-center" style="background: url('<%= cl_image_path list.photo.key if !list.photo.key.nil? %>') center">
-    <%= link_to list.name, list_path(list), class: "h2 text-decoration-none"%>
+    <%= link_to list.name, list_path(list), class: "display-6 h1 text-decoration-none"%>
   </div>
 <% end %>

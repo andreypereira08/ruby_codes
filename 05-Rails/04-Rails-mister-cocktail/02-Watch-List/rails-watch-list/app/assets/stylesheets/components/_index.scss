@@ -11,9 +11,8 @@
   background-position: center;
   height: 400px;
   filter: $darkness_mask;
-  h2 {
+  h1, h2 {
     font-weight: 800;
-    -webkit-text-stroke: 1px black;
     color: white;
     text-shadow:
         3px 3px 0 #000,

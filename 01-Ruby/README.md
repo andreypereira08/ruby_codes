@@ -1,6 +1,6 @@
 The Ruby module has 6 blocks. The first 4 blocks deal with core notions you absolutely need to understand.
 
-### `01 Programming Basics`
+### [`01 Programming Basics`](https://andreypereira08.github.io/ruby_codes/01-Ruby/01-Programming-basics/)
 
 Play with IRB and launch a Ruby script from the terminal. Learn about variables, methods and built-in classes.
 
